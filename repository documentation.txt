@@ -1,0 +1,24 @@
+The repository is a user-defined class that deals with the storage and manipulation of data.
+
+Modules used are datetime, os, math, and csv
+
+__init(self)__
+The only item initialised as of now is the name of the file used.
+
+createFile()
+This function creates a file if it doesn't exist, and then overwrites the file if it already does.
+
+Once the file is opened in write mode (with the csv module), the writer object is initialised. The headings for each column
+(though they are techincally not required for function, they are present for testing) are written and the file is closed.
+
+removeFile()
+This function uses the os module to check if the file exists, and delete it if it does.
+
+addTomatoData()
+
+computeDates()
+This function generates a dictionary where the key-value set is the Serial Number and the amount of days in storage.
+
+Once the file is opened in read mode (with the csv module), the reader object is initialised. Skipping the first row,
+the reader object is then iterated over, and a timedelta object is created, which can be used to find the number of days
+in storage.

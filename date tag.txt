@@ -1,0 +1,6 @@
+n=int(input("Enter number of crates harvested today"))
+from datetime import date
+datetoday = date.today()
+for i in range(0,n):
+    crateid=(i,datetoday)
+    print (crateid)
